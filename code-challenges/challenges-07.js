@@ -103,11 +103,11 @@ const cvFormatter = (arr) => {
                 fullName :arr[i].lastName,
                 tech:arr[i].tech
             })
-        }else{(arr[i].firstName != null && arr[i].lastName == null && arr[i].yearsOfExperience>1)
+        }else if(arr[i].firstName != null && arr[i].lastName == null && arr[i].yearsOfExperience>1){
             newArray.push({
                 fullName :arr[i].firstName,
                 tech:arr[i].tech
-            })
+            }) 
         }
     }
     return newArray;
