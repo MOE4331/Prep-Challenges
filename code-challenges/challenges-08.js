@@ -60,6 +60,17 @@ const customerAndAge = (obj) => {
 
 const getEntries = (obj) => {
   // write your code here
+  let arr=[]
+  for(let rec in obj){
+    
+      let arr2=[]
+      for(let ing in ingredients){
+          arr2.push(ingredients[ing]);
+          return arr2;
+      }
+      arr.push("name:"+rec + "ingredients: "+arr2+"cookTime:"+rec+"price: "+rec)
+  }
+  return arr;
 };
 // -------------------------------------------------------------------------------------------------------
 
