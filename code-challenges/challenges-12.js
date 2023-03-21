@@ -73,6 +73,18 @@ const oddFiltration = (arr) => {
 
 const cvsFiltration = (arr) => {
     // write your code here
+    let result = [];
+    let newCvs = {};
+    arr.filter(function(x) {
+        if((x.tech == "JS" || x.tech =="js") && x.yearsOfExperience > 4){
+            newCvs = {
+          fullName: x.firstName + " " + x.LastName,
+          tech: x.tech
+        }
+       }
+   })
+    result.push(newCvs);
+    return result
 }
 // -------------------------------------------------------------------------------------------------------
 
