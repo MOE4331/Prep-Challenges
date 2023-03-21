@@ -126,7 +126,6 @@ function fullName(arr) {
 // -------------
 
 function gradesAvg(arr) {
-    // write your code here
     let arrAvg = arr.map(function(x) {
         let sum = 0;
         for (let i = 0; i < x.gradsList.length; i++) {
