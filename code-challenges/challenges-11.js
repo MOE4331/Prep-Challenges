@@ -127,6 +127,19 @@ function fullName(arr) {
 
 function gradesAvg(arr) {
     // write your code here
+    let newArr =arr.map(function(arr){
+        let sum = arr.gradsList.reduce(function(total,grade){
+            return total + grade;
+        });
+        let avg = sum/arr.gradsList.length;
+        return{
+            firstName: arr.firstName,
+            lastName: arr.lastName,
+            gradsList: arr.gradsList,
+            avg: avg
+        };
+    });
+    return(newArr);
 }
 // -------------------------------------------------------------------------------------------------------
 
