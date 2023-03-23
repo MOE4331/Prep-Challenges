@@ -99,8 +99,20 @@ const cvsFiltration = (arr) => {
 // 
 
 const vowelsFiltration = (arr) => {
-    // write your code here
+    
+    let vowels = "";
+    let result = [];
+    result = arr.filter(function (x) {
+      for(let i of x){
+        if ( i == 'a' || i == 'e'|| i=='i' || i=='o' || i== 'u'){
+          vowels = x;
+       }
+      }  
+      return x != vowels;
+    })
+     return result;
 } 
+
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
