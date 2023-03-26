@@ -133,7 +133,9 @@ function gradesAvg(arr) {
         }
         let avg = sum / x.gradsList.length;
         return Object.assign(x, { avg });
+     
       });
+      console.log(arrAvg);
       
     return arrAvg;
 }
