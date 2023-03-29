@@ -66,7 +66,22 @@ const LastWord_2 = (str) => {
 //
 
 const replaceWords = (str) => {
-    // write your code here
+    
+    const wordR = str.split(' ')
+
+    if (wordR.indexOf("I") != -1){
+        wordR.splice(wordR.indexOf('I'),1,"We");
+        
+    }
+    if (wordR.indexOf("am") != -1){
+        wordR.splice(wordR.indexOf('am'),1,"are");
+        
+    }
+    if (wordR.indexOf("was") != -1){
+        wordR.splice(wordR.indexOf('was'),1,"were");
+    }
+
+    return wordR.join(' ');
 }
 // -------------------------------------------------------------------------------------------------------
 
