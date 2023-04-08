@@ -24,7 +24,7 @@ describe("Challenge17-02", () => {
   let res1 = "www.hackerrank.com";
   let res2 = "www.something.org";
 
-  test.skip("Filter-Links", () => {
+  test("Filter-Links", () => {
     expect(filterLinks(test1)).toStrictEqual(res1);
     expect(filterLinks(test2)).toStrictEqual(res2);
   });
@@ -36,7 +36,7 @@ describe("Challenge17-03", () => {
   let test3 = " ";
   let test4 = "f";
 
-  test.skip("Is-Palindrome", () => {
+  test("Is-Palindrome", () => {
     expect(isPalindrome(test1)).toStrictEqual(true);
     expect(isPalindrome(test2)).toStrictEqual(false);
     expect(isPalindrome(test3)).toStrictEqual(true);
