@@ -53,7 +53,17 @@ const wordLength = (str) => {
 // Output: false
 
 const wordLetters = (str1, str2) => {
-    // write your code here
+    let input1=str1.split("").sort();
+    let input2=str2.split("").sort();
+
+    let result = true;
+
+    if (input1.join()== input2.join()){
+        return(true)
+    }else{
+        return(false)
+    }
+    return result; 
 }
 // -------------------------------------------------------------------------------------------------------
 
